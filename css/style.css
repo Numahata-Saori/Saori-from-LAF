@@ -342,6 +342,9 @@ li {
     font-size: 0.7rem;
   }
 }
+.skills .other-skills {
+  margin-top: 40px;
+}
 
 .about .sec-title, .about p, .about a {
   color: #EADFCA;
@@ -365,9 +368,73 @@ li {
   letter-spacing: 0.1em;
   padding-top: 10px;
 }
-.about .chronology {
+.about .timeline {
   margin-top: 40px;
   text-align: center;
+}
+.about .timeline__list__item {
+  display: flex;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 860px) {
+  .about .timeline__list__item {
+    font-size: 0.7rem;
+  }
+}
+.about .timeline__list__item .date {
+  font-weight: bold;
+  background: #EADFCA;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.about .timeline__list__item .date p {
+  color: #AA998A;
+}
+.about .timeline__list__item .content {
+  width: 500px;
+  position: relative;
+  background: #AA998A;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 860px) {
+  .about .timeline__list__item .content {
+    width: 70%;
+    padding: 10px;
+    margin-left: 20px;
+  }
+}
+.about .timeline__list__item .content p {
+  color: #EADFCA;
+  vertical-align: middle;
+  line-height: 1rem;
+}
+.about .timeline__list__item .content::before {
+  content: "";
+  /* borderで三角形を作る */
+  border: 10px solid transparent;
+  border-right: 12px solid #AA998A;
+  /* 配置する */
+  position: absolute;
+  top: 60%;
+  left: -22px;
+  margin-top: -15px;
 }
 
 .contact {

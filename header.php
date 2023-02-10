@@ -22,7 +22,7 @@
 <body>
   <header class="header">
     <h1 class="header-logo">
-      <a href="#">LAF SAORI.N</a>
+      <a href="#">Saori from LAF</a>
     </h1>
 
     <nav class="gnav">

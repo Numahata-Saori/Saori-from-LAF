@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
 
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -22,7 +24,7 @@
 <body>
   <header class="header">
     <h1 class="header-logo">
-      <a href="#">Saori from LAF</a>
+      <a href="<?php echo home_url(); ?>">Saori from LAF</a>
     </h1>
 
     <nav class="gnav">

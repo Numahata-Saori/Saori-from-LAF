@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+
 <?php
 
 // 記事の文章
@@ -13,3 +15,5 @@ wp_link_pages(
 );
 
 ?>
+
+<?php get_footer(); ?>

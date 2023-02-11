@@ -161,6 +161,7 @@ Template Name: works
             </div>
           </div>
 
+
           <div class="skill-list__item">
             <p class="skill-list__item__img">
               <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/inventor.png" alt="">
@@ -264,8 +265,10 @@ Template Name: works
         <p class="lead">ポートフォリオをご覧いただきありがとうございます。<br>
           どうぞお気軽にご連絡ください。</p>
 
+        <a class="contact-btn" href="<?php echo get_page_link(94); ?>"><p>お問い合わせはこちら</p></a>
+
         <div class="contact-list">
-          <p><i class="fa-solid fa-envelope mail-icon"></i>numahata.saori@gmail.com</p>
+          <!-- <p><i class="fa-solid fa-envelope mail-icon"></i>numahata.saori@gmail.com</p> -->
           <div class="sns-list">
             <a href="#"><i class="fa-brands fa-facebook sns-list__icon"></i></a>
           </div>

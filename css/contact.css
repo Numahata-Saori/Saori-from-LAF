@@ -1,0 +1,113 @@
+.contact-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #EADFCA;
+  text-align: center;
+  margin: 40px 0;
+}
+
+table.contact-form {
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+  color: #EADFCA;
+  font-size: 16px;
+}
+table.contact-form td,
+table.contact-form th {
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+}
+table.contact-form th {
+  background: #AA998A;
+  font-weight: normal;
+  padding-right: 1em;
+  padding-left: 1em;
+  line-height: 35px;
+}
+table.contact-form th span {
+  color: #9EC3BC;
+}
+table.contact-form td input[type="text"],
+table.contact-form td input[type="tel"],
+table.contact-form td input[type="email"],
+table.contact-form td input[type="url"],
+table.contact-form td input[type="number"],
+table.contact-form td input[type="date"],
+table.contact-form textarea,
+table.contact-form select{
+  color: #EADFCA;
+  background: #AA998A;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.wpcf7-form-control,
+.wpcf7-checkbox {
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.wpcf7-checkbox span {
+  margin-bottom: 10px;
+}
+.wpcf7-checkbox span:last-child {
+  margin-bottom: 0px;
+}
+table.contact-form td input[type="file"],
+input[type="submit"]{
+  display: block;
+  margin: 2em auto;
+  background: #9EC3BC;
+  border: none;
+  color: #EADFCA;
+  cursor: pointer;
+  height: 4em;
+  line-height: 4em;
+  padding: 0 4em;
+  border-radius: 20px;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+.wpcf7-form-control.wpcf7-acceptance{
+  display: block;
+  text-align: center;
+  color: #EADFCA;
+}
+.wpcf7-list-item label {
+    cursor: pointer;
+}
+table.contact-form th.required::after{
+  content: "必須";
+  color: #f00;
+  font-size: .7em;
+  margin-left: 3px;
+}
+.wpcf7-response-output {
+  border-color: #9EC3BC;
+  color: #EADFCA;
+}
+
+
+@media screen and (max-width: 600px) {
+  table.contact-form td,
+  table.contact-form th{
+    border: none;
+    display: block;
+  }
+  table.contact-form th{
+    text-align: left;
+    background: none;
+    font-weight: bold;
+    margin-top: .7em;
+    margin-bottom: -10px;
+  }
+}
+
+.mail-contact {
+  color: #EADFCA;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}

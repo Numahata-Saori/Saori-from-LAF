@@ -693,6 +693,10 @@ li {
   padding: 30px;
   background-color: $accent-color;
 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
   .copyright {
     font-size: 0.6rem;
     text-align: center;

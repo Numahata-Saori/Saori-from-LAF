@@ -111,3 +111,11 @@ table.contact-form th.required::after{
   text-align: center;
   margin-bottom: 40px;
 }
+
+.contact-thanks {
+  color: #9EC3BC;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}

@@ -6,6 +6,10 @@ html {
 body {
   background-color: #AA998A;
   font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 75px;
+  box-sizing: border-box;
 }
 
 .ly-cont {
@@ -503,8 +507,9 @@ li {
 .footer {
   padding: 30px;
   background-color: #EADFCA;
-  position: absolute;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 .footer .copyright {
   font-size: 0.6rem;

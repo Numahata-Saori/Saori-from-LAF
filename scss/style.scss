@@ -50,6 +50,12 @@ $white: #fff;
 body {
   background-color: $base-color;
   font-family: 'Montserrat', sans-serif;
+
+  // コンテンツの高さに応じてfooter位置を調整
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 75px;
+  box-sizing: border-box;
 }
 
 .ly-cont {
@@ -656,10 +662,11 @@ li {
 .footer {
   padding: 30px;
   background-color: $accent-color;
+  width: 100%;
 
   position: absolute;
-  // bottom: 0;
-  width: 100%;
+  bottom: 0;
+
 
   .copyright {
     font-size: 0.6rem;

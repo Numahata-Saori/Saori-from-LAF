@@ -16,8 +16,9 @@ Template Name: works
 
       <div class="mv__text">
         <h1 class="mv__text__concept wow animate__animated animate__fadeInDownBig">
-        あなたの一歩をお手伝い<br>あなたに寄り添うWeb製作</h1>
-        <p class="mv__text__"></p>
+        あなたの一歩をお手伝い</h1>
+        <h1 class="mv__text__concept wow animate__animated animate__fadeInDownBig">
+        あなたに寄り添うWeb製作</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/img/mv/self_a.jpg" alt="">
       </div>
 
@@ -31,17 +32,11 @@ Template Name: works
           // 仕事を取得
           $args = array(
             'post_type' => 'works', // 投稿タイプ
-            // 'tag' => 'おすすめ', // カテゴリをスラッグで指定する場合
-            // 'posts_per_page' => 3, // 表示件数
             'orderby' => 'date', // 表示順の基準
             'order' => 'ASC' // 昇順・降順
           );
-          // $cat_posts = get_posts( $args );
           // カスタムフィールドを取得
           $cat_posts = new WP_Query($args);
-
-          // print_r($cat_posts);
-          // if($cat_posts): foreach($cat_posts as $post): setup_postdata($post);
           ?>
 
           <!-- workが1件以上存在するかどうか -->
@@ -89,6 +84,8 @@ Template Name: works
     <section class="skills sec" id="skills">
       <div class="ly-cont">
         <h2 class="sec-title wow animate__animated animate__backInRight">SKILLS</h2>
+
+        <p class="skill-text">Web製作</p>
 
         <div class="skill-list">
           <div class="skill-list__item">
@@ -157,7 +154,7 @@ Template Name: works
             </p>
             <div class="skill-list__item__info">
               <h3 class="skill-list__item__info__name">AutoCAD(Mechanical)</h3>
-              <p class="skill-list__item__info__text">2DCAD<br>経験年数13年以上、2D操作は一通り可能です。<br>※CADライセンス所持しておりません</p>
+              <p class="skill-list__item__info__text">2DCAD<br>経験年数13年以上<br>2D操作は一通り可能です。<br>※CADは所持しておりません</p>
             </div>
           </div>
 
@@ -168,7 +165,7 @@ Template Name: works
             </p>
             <div class="skill-list__item__info">
               <h3 class="skill-list__item__info__name">Inventor</h3>
-              <p class="skill-list__item__info__text">3DCAD<br>モデリングから解析まで操作可能です<br>※CADライセンスは所持しておりません</p>
+              <p class="skill-list__item__info__text">3DCAD<br>モデリングから解析まで操作可能です<br>※CADは所持しておりません</p>
             </div>
           </div>
         </div>
@@ -258,7 +255,7 @@ Template Name: works
       </div>
     </section>
 
-    <section class="contact sec">
+    <section class="contact sec" id="contact">
       <div class="ly-cont">
         <h2 class="sec-title wow animate__animated animate__backInRight">CONTACT</h2>
 

@@ -115,6 +115,7 @@ li {
 
 .mv {
   background-color: #EADFCA;
+  width: 100%;
   height: 600px;
   text-align: center;
   position: relative;
@@ -129,8 +130,7 @@ li {
   text-align: center;
 }
 .mv__img__item {
-  height: 550px;
-  margin: 0% 20%;
+  height: 600px;
   position: relative;
 }
 @media screen and (max-width: 860px) {
@@ -159,7 +159,8 @@ li {
   }
 }
 .mv__text {
-  color: #9EC3BC;
+  color: #EADFCA;
+  width: 650px;
   position: absolute;
   top: 250px;
   left: 50%;
@@ -169,6 +170,7 @@ li {
 }
 @media screen and (max-width: 860px) {
   .mv__text {
+    width: 90%;
     top: 150px;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
@@ -178,16 +180,19 @@ li {
 @media screen and (max-width: 600px) {
   .mv__text {
     top: 150px;
-    left: 20%;
+    left: 50%;
     transform: translateY(-50%) translateX(-10%);
-    -webkit-transform: translateY(-50%) translateX(-10%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
   }
 }
 .mv__text__concept {
-  font-size: 2.2rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-shadow: 0.02em 0.02em 0.02em #AA998A;
+  display: block;
+  width: auto;
+  margin: 20px;
+  text-shadow: 0.1em 0.1em 0.1em #9EC3BC;
+  font-size: 2.4rem;
+  font-weight: bold;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, #e6cd8c 70%);
 }
 @media screen and (max-width: 860px) {
   .mv__text__concept {
@@ -276,13 +281,13 @@ li {
   height: 250px;
 }
 .works .works-list__item__name {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   margin-top: 10px;
 }
 .works .works-list__item__info {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 5px;
 }
 
@@ -334,12 +339,12 @@ li {
   margin-bottom: 10px;
 }
 .skills .skill-list__item__info__text {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.8;
 }
 @media screen and (max-width: 600px) {
   .skills .skill-list__item__info__text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 .skills .other-skills {
@@ -363,7 +368,7 @@ li {
   }
 }
 .about .profile__name {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   padding-top: 10px;
@@ -374,8 +379,8 @@ li {
 }
 .about .timeline__list__item {
   display: flex;
-  line-height: 1.5;
-  font-size: 0.8rem;
+  line-height: 1.8;
+  font-size: 1rem;
   margin-bottom: 20px;
   text-align: center;
   justify-content: center;
@@ -383,7 +388,7 @@ li {
 }
 @media screen and (max-width: 860px) {
   .about .timeline__list__item {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 .about .timeline__list__item .date {
@@ -423,7 +428,7 @@ li {
 .about .timeline__list__item .content p {
   color: #EADFCA;
   vertical-align: middle;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 .about .timeline__list__item .content::before {
   content: "";
@@ -444,23 +449,24 @@ li {
   color: #EADFCA;
 }
 .contact .contact-btn {
+  font-size: 1.4rem;
   font-weight: bold;
   display: block;
   background: #9EC3BC;
   border-radius: 5px;
-  padding: 10px;
-  width: 300px;
+  padding: 30px;
+  width: 400px;
   margin: 0 auto 20px auto;
   text-align: center;
 }
 .contact .lead {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 600px) {
   .contact .lead {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 .contact .contact-list p {
@@ -498,7 +504,6 @@ li {
   padding: 30px;
   background-color: #EADFCA;
   position: absolute;
-  bottom: 0;
   width: 100%;
 }
 .footer .copyright {

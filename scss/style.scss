@@ -40,6 +40,7 @@ $base-color: #AA998A;
 $sub-color: #9EC3BC;
 $accent-color: #EADFCA;
 $accent-color2: #e6cd8c;
+$white: #fff;
 
 // $base-color: #EFD4CD;
 // $sub-color: #B9CDBF;
@@ -172,8 +173,8 @@ li {
 
 .mv {
   background-color: $accent-color;
+  width: 100%;
   height: 600px;
-  // padding: 60px 0;
   text-align: center;
 
   position: relative;
@@ -181,63 +182,13 @@ li {
 
   @include bq(tb-s) {
     height: 400px;
-    // padding: 40px 20px;
   }
 
-  // https://zenn.dev/ttskch/articles/519004acf226fe
-  // &:before {
-  //   content: '';
-  //   // background: url(../img/disney3_w2000.jpg);
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   filter: blur(3px);
-  //   z-index: -1;
-  //   background-size: cover;
-  //   margin:0 auto;
-  // }
-
-  // &__container {
-  //   overflow-x: hidden;
-
-  //   &__contents {
-  //     margin-right: auto;
-  //     margin-left: auto;
-  //     width: 600px;
-
-  //     .img {
-  //       margin-right: calc(50% - 50vw);
-  //       margin-left: calc(50% - 50vw);
-  //       margin-bottom: 50px;
-
-  //       img {
-  //         display: block;
-  //         width: 100%;
-  //         height: auto;
-  //       }
-  //     }
-  //   }
-  // }
-
   &__img {
-    // width: 100%;
     text-align: center;
 
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
-    // position: relative;
-
     &__item {
-      // position: absolute;
-      // top: 0;
-      // left: 50%;
-      // transform: translate(-50%, 0%);
-      height: 550px;
-      margin: 0% 20%;
+      height: 600px;
 
       position: relative;
 
@@ -269,7 +220,8 @@ li {
   }
 
   &__text {
-    color: $sub-color;
+    color: $accent-color;
+    width: 650px;
 
     position: absolute;
     top: 250px;
@@ -280,6 +232,7 @@ li {
     z-index: 10;
 
     @include bq(tb-s) {
+      width: 90%;
       top: 150px;
       left: 50%;
       transform: translateY(-50%) translateX(-50%);
@@ -288,31 +241,40 @@ li {
 
     @include bq(sm-x) {
       top: 150px;
-      left: 20%;
+      left: 50%;
       transform: translateY(-50%) translateX(-10%);
-      -webkit-transform: translateY(-50%) translateX(-10%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
     }
 
     &__concept{
-      font-size: 2.2rem;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      // background-color: $sub-color;
+      display: block;
+      width: auto;
 
-      text-shadow: 0.02em 0.02em 0.02em $base-color;
+      margin: 20px;
+      // margin-top: 20px;
+      // margin-bottom: 20px;
 
-      // -webkit-text-stroke: 1px $accent-color;
-      // text-shadow: 4px 4px 0 $sub-color;
-      // color: rgba(0 0 0 / 0);
-      // font-style: italic;
+      // 装飾
+      // -webkit-text-stroke: 3px $accent-color;/*テキスト枠部*/
+      // text-shadow: 3px 3px 0 $sub-color;/**/
+      // color: rgba(0 0 0 / 0);/*本来のテキストを透過*/
+      text-shadow: 0.1em 0.1em 0.1em $sub-color;
+      font-size: 2.4rem;
+      font-weight: bold;
+
+      // 下線
+      background-image: linear-gradient(
+        rgba(0 0 0 / 0) 70%,
+        $accent-color2 70%
+      );
+
+
 
       @include bq(tb-s) {
         font-size: 1.2rem;
       }
     }
-
-    // &__text{
-    //   font-size: 1.8rem;
-    // }
 
     img {
       height: 250px;
@@ -336,6 +298,7 @@ li {
 
   &:nth-of-type(odd) {
     background-color: $sub-color;
+    // background-color: $white;
   }
 }
 
@@ -408,14 +371,14 @@ li {
       }
 
       &__name {
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: bold;
         letter-spacing: 0.1em;
         margin-top: 10px;
       }
 
       &__info {
-        font-size: 0.8rem;
+        font-size: 1rem;
         // letter-spacing: 0.1em;
         margin-top: 5px;
       }
@@ -476,11 +439,11 @@ li {
         }
 
         &__text {
-          font-size: 0.8rem;
+          font-size: 1rem;
           line-height: 1.8;
 
           @include bq(sm-x) {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
           }
         }
       }
@@ -512,7 +475,7 @@ li {
     }
 
     &__name {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       font-weight: bold;
       letter-spacing: 0.1em;
       padding-top: 10px;
@@ -538,8 +501,8 @@ li {
       &__item {
         // margin: auto 0;
         display: flex;
-        line-height: 1.5;
-        font-size: 0.8rem;
+        line-height: 1.8;
+        font-size: 1.0rem;
         margin-bottom: 20px;
         text-align: center;
         // vertical-align: middle;
@@ -547,7 +510,7 @@ li {
         align-items: center;
 
         @include bq(tb-s) {
-          font-size: 0.7rem;
+          font-size: 0.8rem;
         }
 
         .date {
@@ -596,7 +559,7 @@ li {
             color: $accent-color;
             // color: $sub-color;
             vertical-align: middle;
-            line-height: 1rem;
+            line-height: 1.5rem;
           }
 
             &::before {
@@ -635,23 +598,24 @@ li {
   }
 
   .contact-btn {
+    font-size: 1.4rem;
     font-weight: bold;
     display: block;
     background: $sub-color;
     border-radius: 5px;
-    padding: 10px;
-    width: 300px;
+    padding: 30px;
+    width: 400px;
     margin: 0 auto 20px auto;
     text-align: center;
   }
 
   .lead {
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     line-height: 1.8;
     margin-bottom: 20px;
 
     @include bq(sm-x) {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -694,7 +658,7 @@ li {
   background-color: $accent-color;
 
   position: absolute;
-  bottom: 0;
+  // bottom: 0;
   width: 100%;
 
   .copyright {

@@ -85,7 +85,7 @@ Template Name: works
       <div class="ly-cont">
         <h2 class="sec-title wow animate__animated animate__backInRight">SKILLS</h2>
 
-        <p class="skill-text">Web製作</p>
+        <p class="skill-text wow animate__animated animate__heartBeat">WordPressを使ったWebサイトやLPなどのWeb製作を行っております。</p>
 
         <div class="skill-list">
           <div class="skill-list__item">

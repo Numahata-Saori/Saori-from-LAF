@@ -298,6 +298,10 @@ li {
 .skills .sec-title, .skills h3, .skills p, .skills a {
   color: #EADFCA;
 }
+.skills .skill-text {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
 .skills .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -460,8 +464,16 @@ li {
   border-radius: 5px;
   padding: 30px;
   width: 400px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .contact .contact-btn {
+    font-size: 1rem;
+    padding: 10px;
+    width: 300px;
+  }
 }
 .contact .lead {
   font-size: 1rem;

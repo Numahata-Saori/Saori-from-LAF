@@ -121,7 +121,9 @@ li {
   background-color: #EADFCA;
   width: 100%;
   height: 600px;
+  /*配置*/
   text-align: center;
+  /*位置決め*/
   position: relative;
   z-index: 10;
 }
@@ -131,10 +133,12 @@ li {
   }
 }
 .mv__img {
+  /*配置*/
   text-align: center;
 }
 .mv__img__item {
   height: 600px;
+  /*位置決め*/
   position: relative;
 }
 @media screen and (max-width: 860px) {
@@ -214,6 +218,7 @@ li {
 }
 
 .sec {
+  /*余白*/
   padding: 60px 0;
 }
 @media screen and (max-width: 600px) {
@@ -228,10 +233,13 @@ li {
 .sec-title {
   font-size: 1.7rem;
   font-weight: bold;
-  line-height: 1;
-  margin-bottom: 40px;
   letter-spacing: 0.2em;
+  line-height: 1;
+  /*余白*/
+  margin-bottom: 40px;
+  /*配置*/
   text-align: center;
+  /*文字下破線*/
   display: inline-block;
   padding: 0 2em 20px;
   background-image: repeating-linear-gradient(90deg, #e6cd8c 0px, #e6cd8c 12px, rgba(0, 0, 0, 0) 12px, rgba(0, 0, 0, 0) 20px);
@@ -251,26 +259,37 @@ li {
   color: #EADFCA;
 }
 .works .works-list {
+  /*配置*/
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: flex-start;
+  /*余白*/
   margin-bottom: -40px;
 }
 @media screen and (max-width: 600px) {
   .works .works-list {
+    /*配置*/
     flex-direction: column;
     text-align: center;
+    /*余白*/
     margin-bottom: 0px;
   }
 }
 .works .works-list__item {
-  width: calc(33.3333333333% - 20px);
+  width: calc(33.3333333333% - 20px); /*3分割*/
+  /*余白*/
   margin: 0 10px 40px 10px;
+  /*左列外側余白不要*/
+  /*右列外側余白不要*/
+  /*サムネイル*/
+  /*Webサイト名*/
+  /*Webサイト説明*/
 }
 @media screen and (max-width: 600px) {
   .works .works-list__item {
     width: 100%;
+    /*余白*/
     margin: 0 0 20px 0;
   }
 }
@@ -288,43 +307,57 @@ li {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.1em;
+  /*余白*/
   margin-top: 10px;
 }
 .works .works-list__item__info {
   font-size: 1rem;
+  /*余白*/
   margin-top: 5px;
 }
 
+/*スキル*/
 .skills .sec-title, .skills h3, .skills p, .skills a {
   color: #EADFCA;
 }
 .skills .skill-text {
   font-weight: bold;
+  /*余白*/
   margin-bottom: 40px;
 }
 .skills .skill-list {
+  /*配置*/
   display: flex;
-  flex-wrap: wrap;
   align-content: space-between;
+  flex-wrap: wrap;
   justify-content: flex-start;
+  /*余白*/
   margin-bottom: -40px;
 }
 @media screen and (max-width: 600px) {
   .skills .skill-list {
+    /*配置*/
     flex-direction: column;
+    /*余白*/
     margin-bottom: 0px;
   }
 }
 .skills .skill-list__item {
+  /*配置*/
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: calc(33.3333333333% - 40px);
+  width: calc(33.3333333333% - 40px); /*３分割-余白*/
+  /*余白*/
   margin: 0 20px 40px 20px;
+  /*左列余白なし*/
+  /*右列余白なし*/
+  /*スキルアイコン*/
 }
 @media screen and (max-width: 600px) {
   .skills .skill-list__item {
     width: 100%;
+    /*余白*/
     margin: 0 0 30px 0;
   }
 }
@@ -337,13 +370,15 @@ li {
 .skills .skill-list__item__img {
   width: 60px;
   height: auto;
+  /*余白*/
   margin-right: 20px;
 }
 .skills .skill-list__item__info {
-  flex: 1;
+  flex: 1; /*スキルアイコンのサイズを統一*/
 }
 .skills .skill-list__item__info__name {
   font-size: 1rem;
+  /*余白*/
   margin-bottom: 10px;
 }
 .skills .skill-list__item__info__text {
@@ -356,16 +391,23 @@ li {
   }
 }
 .skills .other-skills {
+  /*余白*/
   margin-top: 40px;
 }
 
+/*プロフィール*/
+.about {
+  /*年表*/
+}
 .about .sec-title, .about p, .about a {
   color: #EADFCA;
 }
 .about .profile {
+  /*配置*/
   text-align: center;
 }
 .about .profile__img {
+  /*自画像形状*/
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   width: 300px;
   height: auto;
@@ -379,20 +421,26 @@ li {
   font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 0.1em;
+  /*余白*/
   padding-top: 10px;
 }
 .about .timeline {
-  margin-top: 40px;
+  /*配置*/
   text-align: center;
+  /*余白*/
+  margin-top: 40px;
 }
 .about .timeline__list__item {
-  display: flex;
-  line-height: 1.8;
   font-size: 1rem;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  /*配置*/
+  display: flex;
+  align-items: center;
   text-align: center;
   justify-content: center;
-  align-items: center;
+  /*余白*/
+  margin-bottom: 20px;
+  /*吹き出し*/
 }
 @media screen and (max-width: 860px) {
   .about .timeline__list__item {
@@ -400,43 +448,49 @@ li {
   }
 }
 .about .timeline__list__item .date {
-  font-weight: bold;
   background: #EADFCA;
+  font-weight: bold;
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  /*配置*/
   display: flex;
-  justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .about .timeline__list__item .date p {
   color: #AA998A;
 }
 .about .timeline__list__item .content {
-  width: 500px;
-  position: relative;
   background: #AA998A;
   border-radius: 20px;
-  padding: 20px;
   font-weight: bold;
-  margin-left: 50px;
+  width: 500px;
+  /*配置*/
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  /*余白*/
+  margin-left: 50px;
+  padding: 20px;
+  /*吹き出し三角用位置決め*/
+  position: relative;
+  /*吹き出し左三角*/
 }
 @media screen and (max-width: 860px) {
   .about .timeline__list__item .content {
     width: 70%;
-    padding: 10px;
+    /*余白*/
     margin-left: 20px;
+    padding: 10px;
   }
 }
 .about .timeline__list__item .content p {
   color: #EADFCA;
-  vertical-align: middle;
   line-height: 1.5rem;
+  vertical-align: middle;
 }
 .about .timeline__list__item .content::before {
   content: "";
@@ -445,39 +499,45 @@ li {
   border-right: 12px solid #AA998A;
   /* 配置する */
   position: absolute;
-  top: 60%;
-  left: -22px;
+  top: 55%;
+  left: -20px;
   margin-top: -15px;
 }
 
+/*お問い合わせ*/
 .contact {
+  /*配置*/
   text-align: center;
 }
 .contact .sec-title, .contact p, .contact a {
   color: #EADFCA;
 }
 .contact .contact-btn {
-  font-size: 1.4rem;
-  font-weight: bold;
-  display: block;
   background: #9EC3BC;
   border-radius: 5px;
-  padding: 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
   width: 400px;
+  /*配置*/
+  display: block;
+  text-align: center;
+  /*余白*/
+  padding: 30px;
   margin: 0 auto;
   margin-bottom: 20px;
-  text-align: center;
 }
 @media screen and (max-width: 600px) {
   .contact .contact-btn {
     font-size: 1rem;
-    padding: 10px;
     width: 300px;
+    /*余白*/
+    padding: 10px;
   }
 }
 .contact .lead {
   font-size: 1rem;
   line-height: 1.8;
+  /*余白*/
   margin-bottom: 20px;
 }
 @media screen and (max-width: 600px) {
@@ -496,6 +556,7 @@ li {
 .contact .mail-icon {
   color: #EADFCA;
   font-size: 1.4rem;
+  /*余白*/
   padding-right: 10px;
 }
 @media screen and (max-width: 600px) {
@@ -529,8 +590,9 @@ li {
   color: #AA998A;
 }
 
-/*リンクを右下に固定*/
+/*TOPボタンを右下に固定*/
 #page-top {
+  /*配置*/
   position: fixed;
   right: 10px;
   bottom: 10px;
@@ -538,7 +600,7 @@ li {
   /*はじめは非表示*/
   opacity: 0;
   transform: translateX(100px);
-  /*リンクの形状*/
+  /*ボタンの形状*/
 }
 #page-top a {
   color: #AA998A;
@@ -546,12 +608,13 @@ li {
   border: 2px solid #AA998A;
   border-radius: 5px;
   font-size: 0.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   width: 60px;
   height: 60px;
+  /*配置*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.3s;
@@ -560,7 +623,7 @@ li {
   background: #777;
 }
 
-/*　左の動き　*/
+/* 左の動き */
 #page-top.LeftMove {
   -webkit-animation: LeftAnime 0.5s forwards;
           animation: LeftAnime 0.5s forwards;
@@ -587,7 +650,7 @@ li {
     transform: translateX(0);
   }
 }
-/*　右の動き　*/
+/* 右の動き */
 #page-top.RightMove {
   -webkit-animation: RightAnime 0.5s forwards;
           animation: RightAnime 0.5s forwards;

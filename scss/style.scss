@@ -66,7 +66,7 @@ body {
   text-align: center;
 
   @include bq(tb-s) {
-     padding: 0 16px;
+    padding: 0 16px;
   }
 }
 
@@ -181,9 +181,13 @@ li {
   background-color: $accent-color;
   width: 100%;
   height: 600px;
+
+  /*配置*/
   text-align: center;
 
+  /*位置決め*/
   position: relative;
+
   z-index: 10;
 
   @include bq(tb-s) {
@@ -191,11 +195,13 @@ li {
   }
 
   &__img {
+    /*配置*/
     text-align: center;
 
     &__item {
       height: 600px;
 
+      /*位置決め*/
       position: relative;
 
        @include bq(tb-s) {
@@ -296,6 +302,7 @@ li {
 }
 
 .sec {
+  /*余白*/
   padding: 60px 0;
 
   @include bq(sm-x) {
@@ -304,18 +311,22 @@ li {
 
   &:nth-of-type(odd) {
     background-color: $sub-color;
-    // background-color: $white;
   }
 }
 
 .sec-title {
   font-size: 1.7rem;
   font-weight: bold;
-  line-height: 1;
-  margin-bottom: 40px;
   letter-spacing: 0.2em;
+  line-height: 1;
+
+  /*余白*/
+  margin-bottom: 40px;
+
+  /*配置*/
   text-align: center;
 
+  /*文字下破線*/
   display: inline-block;
   padding: 0 2em 20px;
   background-image:
@@ -335,40 +346,54 @@ li {
   }
 }
 
+// 仕事一覧
 .works {
   .sec-title, p, a {
     color: $accent-color;
   }
 
   .works-list {
+    /*配置*/
     display: flex;
     flex-wrap: wrap;//flexアイテムを複数行に分割
     align-content: space-between;
     justify-content: flex-start;
+
+    /*余白*/
     margin-bottom: -40px;//最下段のみmargin不要
 
     @include bq(sm-x) {
+      /*配置*/
       flex-direction: column;
       text-align: center;
+
+      /*余白*/
       margin-bottom: 0px;
     }
 
     &__item {
-      width: calc(100% / 3 - 20px);
+      width: calc(100% / 3 - 20px);/*3分割*/
+
+      /*余白*/
       margin: 0 10px 40px 10px;
 
       @include bq(sm-x) {
         width: 100%;
+
+        /*余白*/
         margin: 0 0 20px 0;
       }
 
+      /*左列外側余白不要*/
       &:nth-child(3n+1) {
         margin-left: 0;
       }
+      /*右列外側余白不要*/
       &:nth-child(3n) {
         margin-right: 0;
       }
 
+      /*サムネイル*/
       &__img {
         img {
           width: 400px;
@@ -376,22 +401,29 @@ li {
         }
       }
 
+      /*Webサイト名*/
       &__name {
         font-size: 1rem;
         font-weight: bold;
         letter-spacing: 0.1em;
+
+        /*余白*/
         margin-top: 10px;
       }
 
+      /*Webサイト説明*/
       &__info {
         font-size: 1rem;
         // letter-spacing: 0.1em;
+
+        /*余白*/
         margin-top: 5px;
       }
     }
   }
 }
 
+/*スキル*/
 .skills {
 
   .sec-title, h3, p, a {
@@ -401,51 +433,71 @@ li {
 
   .skill-text {
     font-weight: bold;
+
+    /*余白*/
     margin-bottom: 40px;
   }
 
   .skill-list{
+    /*配置*/
     display: flex;
-    flex-wrap: wrap;
     align-content: space-between;
+    flex-wrap: wrap;
     justify-content: flex-start;
+
+    /*余白*/
     margin-bottom: -40px;
 
     @include bq(sm-x) {
+      /*配置*/
       flex-direction: column;
+
+      /*余白*/
       margin-bottom: 0px;
     }
 
     &__item {
+      /*配置*/
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: calc(100% / 3 - 40px);
+      width: calc(100% / 3 - 40px);/*３分割-余白*/
+
+      /*余白*/
       margin: 0 20px 40px 20px;
 
       @include bq(sm-x) {
         width: 100%;
+
+        /*余白*/
         margin: 0 0 30px 0;
       }
 
+      /*左列余白なし*/
       &:nth-child(3n+1) {
         margin-left: 0;
       }
+      /*右列余白なし*/
       &:nth-child(3n) {
         margin-right: 0;
       }
 
+      /*スキルアイコン*/
       &__img {
         width: 60px;
         height: auto;
+
+        /*余白*/
         margin-right: 20px;
       }
 
       &__info {
-        flex: 1;
+        flex: 1;/*スキルアイコンのサイズを統一*/
 
         &__name {
           font-size: 1rem;
+
+          /*余白*/
           margin-bottom: 10px;
         }
 
@@ -462,10 +514,12 @@ li {
   }
 
   .other-skills {
+    /*余白*/
     margin-top: 40px;
   }
 }
 
+/*プロフィール*/
 .about {
 
   .sec-title, p, a {
@@ -473,9 +527,11 @@ li {
   }
 
   .profile {
+    /*配置*/
     text-align: center;
 
     &__img {
+      /*自画像形状*/
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
       width: 300px;
       height: auto;
@@ -489,118 +545,117 @@ li {
       font-size: 1.6rem;
       font-weight: bold;
       letter-spacing: 0.1em;
+
+      /*余白*/
       padding-top: 10px;
     }
   }
 
-  // .chronology {
-  //   margin-top: 40px;
-  //   text-align: center;
-  // }
-
+  /*年表*/
   .timeline {
-    margin-top: 40px;
+    /*配置*/
     text-align: center;
-    // width: 96%;
-    // max-width: 940px;
-    // margin: 28px auto;
-    // border: 1px solid #eeeeee;
+
+    /*余白*/
+    margin-top: 40px;
 
     &__list {
-      // padding: 40px 0;
 
       &__item {
-        // margin: auto 0;
-        display: flex;
-        line-height: 1.8;
         font-size: 1.0rem;
-        margin-bottom: 20px;
+        line-height: 1.8;
+
+        /*配置*/
+        display: flex;
+        align-items: center;
         text-align: center;
         // vertical-align: middle;
         justify-content: center;
-        align-items: center;
+
+        /*余白*/
+        margin-bottom: 20px;
 
         @include bq(tb-s) {
           font-size: 0.8rem;
         }
 
         .date {
-          font-weight: bold;
-
-          // display: inline-block;
           background: $accent-color;
-          // color: $base-color;
+          font-weight: bold;
           border-radius: 50%;
-          // padding: 20px;
           width: 60px;
           height: 60px;
 
+          /*配置*/
           display: flex;
-          justify-content: center;
           align-content: center;
           flex-wrap: wrap;
+          justify-content: center;
 
           p {
             color: $base-color;
           }
         }
 
+        /*吹き出し*/
         .content {
-          width: 500px;
-          position: relative;
-          // display: inline-block;
           background: $base-color;
           border-radius: 20px;
-          padding: 20px;
           font-weight: bold;
-          margin-left: 50px;
+          width: 500px;
 
+          /*配置*/
           display: flex;
           justify-content: center;
           align-content: center;
           flex-wrap: wrap;
 
+          /*余白*/
+          margin-left: 50px;
+          padding: 20px;
+
+          /*吹き出し三角用位置決め*/
+          position: relative;
+
           @include bq(tb-s) {
             width: 70%;
-            padding: 10px;
+
+            /*余白*/
             margin-left: 20px;
+            padding: 10px;
           }
 
           p {
             color: $accent-color;
             // color: $sub-color;
-            vertical-align: middle;
             line-height: 1.5rem;
+
+            vertical-align: middle;
           }
 
-            &::before {
-              content: "";
-              /* borderで三角形を作る */
-              border: 10px solid transparent;
-              border-right: 12px solid $base-color;
-              /* 配置する */
-              position: absolute;
-              top: 60%;
-              left: -22px;
-              margin-top: -15px;
-              // transform: translateX(-50%);
+          /*吹き出し左三角*/
+          &::before {
+            content: "";
+            /* borderで三角形を作る */
+            border: 10px solid transparent;
+            border-right: 12px solid $base-color;
 
-
-              // position: absolute;
-              // top: 15px;
-              // left: -10px; //widthの半分の値を指定
-              // width: 20px;
-              // height: 20px;
-              // background-color: #00c2bc;
-              // border-radius: 10px;
-            }
+            /* 配置する */
+            position: absolute;
+            top: 55%;
+            left: -20px;
+            margin-top: -15px;
+            // transform: translateX(-50%);
+          }
         }
       }
     }
-}
+  }
 }
 
+/*お問い合わせ*/
 .contact {
+  /*配置*/
   text-align: center;
 
   .sec-title, p, a {
@@ -609,28 +664,35 @@ li {
   }
 
   .contact-btn {
-    font-size: 1.4rem;
-    font-weight: bold;
-    display: block;
     background: $sub-color;
     border-radius: 5px;
-    padding: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
     width: 400px;
-    // margin: 0 auto 20px auto;
+
+    /*配置*/
+    display: block;
+    text-align: center;
+
+    /*余白*/
+    padding: 30px;
     margin: 0 auto;
     margin-bottom: 20px;
-    text-align: center;
 
     @include bq(sm-x) {
       font-size: 1.0rem;
-      padding: 10px;
       width: 300px;
+
+      /*余白*/
+      padding: 10px;
     }
   }
 
   .lead {
     font-size: 1.0rem;
     line-height: 1.8;
+
+    /*余白*/
     margin-bottom: 20px;
 
     @include bq(sm-x) {
@@ -651,6 +713,8 @@ li {
   .mail-icon {
     color: $accent-color;
     font-size: 1.4rem;
+
+    /*余白*/
     padding-right: 10px;
 
     @include bq(sm-x) {
@@ -688,8 +752,9 @@ li {
   }
 }
 
-/*リンクを右下に固定*/
+/*TOPボタンを右下に固定*/
 #page-top {
+  /*配置*/
   position: fixed;
 	right: 10px;
 	bottom:10px;
@@ -698,23 +763,21 @@ li {
 	opacity: 0;
 	transform: translateX(100px);
 
-  /*リンクの形状*/
+  /*ボタンの形状*/
   a {
     color: $base-color;
     background: $accent-color;
     border: 2px solid $base-color;
-    // border-color: $base-color;
-    // border-style: solid;
     border-radius: 5px;
     font-size:0.8rem;
-
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    text-align: center;
-
     width: 60px;
     height: 60px;
+
+    /*配置*/
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
 
     text-transform: uppercase;
     text-decoration: none;
@@ -727,7 +790,7 @@ li {
   }
 }
 
-/*　左の動き　*/
+/* 左の動き */
 #page-top.LeftMove{
   animation: LeftAnime 0.5s forwards;
 }
@@ -742,7 +805,7 @@ li {
     transform: translateX(0);
   }
 }
-/*　右の動き　*/
+/* 右の動き */
 #page-top.RightMove{
   animation: RightAnime 0.5s forwards;
 }

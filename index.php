@@ -150,6 +150,19 @@ Template Name: works
             </p>
           </div>
         </div>
+
+        <div class="skill-list__item">
+          <p class="skill-list__item__img">
+            <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/figma_logo_icon.png" alt="">
+          </p>
+          <div class="skill-list__item__info">
+            <h3 class="skill-list__item__info__name">Figma</h3>
+            <p class="skill-list__item__info__text">
+              Web制作のデザインカンプなどを作ることが可能です。
+            </p>
+          </div>
+        </div>
+
       </div>
 
       <!-- Web関係以外のスキル一覧 -->
@@ -176,7 +189,7 @@ Template Name: works
 
         <div class="skill-list__item">
           <p class="skill-list__item__img">
-            <!-- <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/" alt=""> -->
+            <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/catia.png" alt="">
           </p>
           <div class="skill-list__item__info">
             <h3 class="skill-list__item__info__name">CATIA</h3>

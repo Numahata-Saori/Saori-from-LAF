@@ -20,6 +20,11 @@ body {
 }
 @media screen and (max-width: 860px) {
   .ly-cont {
+    padding: 0 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ly-cont {
     padding: 0 16px;
   }
 }
@@ -178,7 +183,7 @@ li {
 }
 @media screen and (max-width: 860px) {
   .mv__text {
-    width: 90%;
+    width: 400px;
     top: 150px;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
@@ -187,6 +192,7 @@ li {
 }
 @media screen and (max-width: 600px) {
   .mv__text {
+    width: 90%;
     top: 150px;
     left: 50%;
     transform: translateY(-50%) translateX(-10%);
@@ -267,7 +273,7 @@ li {
   /*余白*/
   margin-bottom: -40px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .works .works-list {
     /*配置*/
     flex-direction: column;
@@ -286,7 +292,7 @@ li {
   /*Webサイト名*/
   /*Webサイト説明*/
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .works .works-list__item {
     width: 100%;
     /*余白*/
@@ -334,7 +340,7 @@ li {
   /*余白*/
   margin-bottom: -40px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .skills .skill-list {
     /*配置*/
     flex-direction: column;
@@ -354,7 +360,7 @@ li {
   /*右列余白なし*/
   /*スキルアイコン*/
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .skills .skill-list__item {
     width: 100%;
     /*余白*/

@@ -66,6 +66,10 @@ body {
   text-align: center;
 
   @include bq(tb-s) {
+    padding: 0 20%;
+  }
+
+  @include bq(sm-x) {
     padding: 0 16px;
   }
 }
@@ -244,7 +248,7 @@ li {
     z-index: 10;
 
     @include bq(tb-s) {
-      width: 90%;
+      width: 400px;
       top: 150px;
       left: 50%;
       transform: translateY(-50%) translateX(-50%);
@@ -252,6 +256,7 @@ li {
     }
 
     @include bq(sm-x) {
+      width: 90%;
       top: 150px;
       left: 50%;
       transform: translateY(-50%) translateX(-10%);
@@ -280,8 +285,6 @@ li {
         rgba(0 0 0 / 0) 70%,
         $accent-color2 70%
       );
-
-
 
       @include bq(tb-s) {
         font-size: 1.2rem;
@@ -362,7 +365,7 @@ li {
     /*余白*/
     margin-bottom: -40px;//最下段のみmargin不要
 
-    @include bq(sm-x) {
+    @include bq(tb-s) {
       /*配置*/
       flex-direction: column;
       text-align: center;
@@ -377,7 +380,7 @@ li {
       /*余白*/
       margin: 0 10px 40px 10px;
 
-      @include bq(sm-x) {
+      @include bq(tb-s) {
         width: 100%;
 
         /*余白*/
@@ -448,7 +451,7 @@ li {
     /*余白*/
     margin-bottom: -40px;
 
-    @include bq(sm-x) {
+    @include bq(tb-s) {
       /*配置*/
       flex-direction: column;
 
@@ -466,7 +469,7 @@ li {
       /*余白*/
       margin: 0 20px 40px 20px;
 
-      @include bq(sm-x) {
+      @include bq(tb-s) {
         width: 100%;
 
         /*余白*/

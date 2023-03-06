@@ -26,8 +26,12 @@ Template Name: works
 
   <!-- 仕事一覧 -->
   <section class="works sec" id="works">
+
     <div class="ly-cont">
       <h2 class="sec-title wow animate__animated animate__backInLeft">WORKS</h2>
+
+      <p class="sec-text wow animate__animated animate__heartBeat">基本価格は、LP(ランディングページ)を含む1ページ3万で承っておりますが、<br>お客様のご要望に合わせて柔軟に対応致します。<br>お気軽にご相談ください。</p>
+
       <ul class="works-list">
         <?php
         // 仕事を取得
@@ -89,7 +93,7 @@ Template Name: works
     <div class="ly-cont">
       <h2 class="sec-title wow animate__animated animate__backInRight">SKILLS</h2>
 
-      <p class="skill-text wow animate__animated animate__heartBeat">WordPressを使ったWebサイトやLPなどのWeb製作を行っております。</p>
+      <p class="sec-text wow animate__animated animate__heartBeat">WordPressを使ったWebサイトやLPなどのWeb製作を行っております。</p>
 
       <!-- Web関係スキル一覧 -->
       <div class="skill-list">

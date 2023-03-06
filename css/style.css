@@ -216,6 +216,7 @@ li {
 .mv__text img {
   height: 250px;
   border-radius: 50%;
+  margin-top: 20px;
 }
 @media screen and (max-width: 860px) {
   .mv__text img {
@@ -255,9 +256,21 @@ li {
 }
 @media screen and (max-width: 600px) {
   .sec-title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0 2em 10px;
     background-size: 20px 2px;
+  }
+}
+
+.sec-text {
+  font-weight: bold;
+  line-height: 1.5;
+  /*余白*/
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+  .sec-text {
+    font-size: 0.8rem;
   }
 }
 
@@ -325,11 +338,6 @@ li {
 /*スキル*/
 .skills .sec-title, .skills h3, .skills p, .skills a {
   color: #EADFCA;
-}
-.skills .skill-text {
-  font-weight: bold;
-  /*余白*/
-  margin-bottom: 40px;
 }
 .skills .skill-list {
   /*配置*/

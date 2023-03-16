@@ -97,17 +97,68 @@ Template Name: works
 
       <!-- Web関係スキル一覧 -->
       <div class="skill-list">
+        <?php
+        // スキルを取得
+        $args = array(
+          'post_type' => 'skills', // 投稿タイプ
+          'orderby' => 'date', // 表示順の基準
+          'order' => 'ASC' // 昇順・降順
+        );
+        // カスタムフィールドを取得
+        $cat_posts = new WP_Query($args);
+        ?>
+
+        <!-- skillsが1件以上存在するかどうか -->
+        <?php if($cat_posts->have_posts()) : ?>
+          <?php
+            // skillsが存在するだけループ
+            while($cat_posts->have_posts()) :
+              $cat_posts->the_post();
+          ?>
+
+        <!-- ループはじめ -->
         <div class="skill-list__item">
+          <div class="skill-list__item__img">
+            <!-- <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/html.png" alt=""> -->
+            <?php
+            // サンプル画像ページで設定した画像を取得
+            $skillicon = get_field('skill-icon');
+            $size = 'thumbnail';
+            // medium, large, fullなども指定可能
+
+            if( $skillicon ) {
+              echo wp_get_attachment_image( $skillicon, $size );
+            }
+            ?>
+          </div>
+          <div class="skill-list__item__info">
+            <h3 class="skill-list__item__info__name"><?php echo post_custom('skill-name'); ?></h3>
+            <p class="skill-list__item__info__text"><?php echo post_custom('skill-text'); ?></p>
+          </div>
+        </div>
+        <!-- ループおわり -->
+
+        <?php
+        // 投稿のループ終了
+        endwhile;
+        // 投稿の条件分岐を終了
+        endif;
+        ?>
+
+        <!-- 使用した投稿データをリセット -->
+        <?php wp_reset_postdata(); ?>
+
+        <!-- <div class="skill-list__item">
           <p class="skill-list__item__img">
             <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/html.png" alt="">
           </p>
           <div class="skill-list__item__info">
-            <h3 class="skill-list__item__info__name">HTML/CSS</h3>
+            <h3 class="skill-list__item__info__name">HTML/CSS/SCSS</h3>
             <p class="skill-list__item__info__text">スマホで見ても表示崩れのないレスポンシブ対応も可能です。</p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="skill-list__item">
+        <!-- <div class="skill-list__item">
           <p class="skill-list__item__img">
             <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/js.png" alt="">
           </p>
@@ -117,9 +168,9 @@ Template Name: works
               お問い合わせフォームや自動スクロールなど動きのあるWebサイトを作る事が可能です。
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="skill-list__item">
+        <!-- <div class="skill-list__item">
           <p class="skill-list__item__img">
             <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/jquery.png" alt="">
           </p>
@@ -129,9 +180,9 @@ Template Name: works
               Webサイトにフェードイン・フェードアウトなどリッチな動きをつけることが可能です。
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="skill-list__item">
+        <!-- <div class="skill-list__item">
           <p class="skill-list__item__img">
             <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/php1.png" alt="">
           </p>
@@ -141,9 +192,9 @@ Template Name: works
               得意のLaravelフレームワークを駆使してWebアプリを作ります。
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="skill-list__item">
+        <!-- <div class="skill-list__item">
           <p class="skill-list__item__img">
             <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/wordpress.png" alt="">
           </p>
@@ -153,9 +204,9 @@ Template Name: works
               WordPress製の店舗HP・企業HP・メディアサイトなど、Webサイトを0から構築することが可能です。
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="skill-list__item">
+        <!-- <div class="skill-list__item">
           <p class="skill-list__item__img">
             <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/img/skills/figma_logo_icon.png" alt="">
           </p>
@@ -165,7 +216,7 @@ Template Name: works
               Web制作のデザインカンプなどを作ることが可能です。
             </p>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
